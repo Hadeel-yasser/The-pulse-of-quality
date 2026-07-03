@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Pulse of Quality</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         
@@ -11,15 +10,16 @@
                 margin-left: 58px;
                 align-items: center;
                 text-align: center;
-                font-family: poppins;
-                
+                font-family: Jost;
+                color:#FFD816;
+                text-shadow: 0 0 6px rgba(43, 31, 45, 0.8);
         }
         h3{
-            padding-bottom: 10px;
+            padding-bottom: 30px;
         }
         body {
-            background-color: rgb(0, 0, 0);
-            color: rgb(233, 241, 241);
+            background-color: #26082d;
+            
             font-family: sans-serif;
             
         }
@@ -29,22 +29,22 @@
         }
         .pulse-line {
             fill: none;
-            stroke: rgb(0, 255, 255);
+            stroke: #FFD816;
             stroke-width: 2;
             filter: url(#glow);
         }
         
         .data-point circle {
-            fill: rgb(0, 255, 255);
+            fill: #f5d847;
             stroke: #e9ffc6;
             stroke-width: 1;
             filter: url(#glow);
         }
         .value-label {
-            fill: rgb(126, 235, 250);
+            fill: #FFD816;
             font-size: 11px;
             font-weight: bold;
-            text-shadow: 0 0 3px #000;
+            text-shadow: 0 0 3px #c0b2b2;
             pointer-events: none;
         }
         .date-label {
@@ -52,11 +52,7 @@
             font-size: 10px;
             pointer-events: none;
         }
-        .interactive-dot {
-            fill: #0f0;
-            opacity: 0;
-            cursor: pointer;
-        }
+        
         #tooltip {
             position: absolute;
             background-color: rgba(0, 0, 0, 0.8);
@@ -67,7 +63,7 @@
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+            box-shadow: 0 0 10px #FFD816;
         }
     </style>
 </head>

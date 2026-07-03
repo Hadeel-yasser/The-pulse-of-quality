@@ -38,14 +38,14 @@ d3.csv("Quality-reports-dataset.csv").then(function(data){ // load the csv file 
         .attr("class","x-axis") // add a new group for the x-axis
         .attr("transform",`translate(0,${height})`) // move the x-axis to the bottom by translating it with +ve y (height of the svg)
         .call(xAxis) // call the xAxis function to create the axis and add it to the group
-        .style("color","#999")
+        .style("color","#c5bdbdea")
         .style("font-size","13px")
         .style("font-family","monospace");
 
     svg.append("g")
         .attr("class","y-axis") // add a new group for the y-axis
         .call(yAxis)
-        .style("color","#999")
+        .style("color","#c5bdbdea")
         .style("font-size","13px")
         .style("font-family","monospace"); 
 
